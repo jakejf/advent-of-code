@@ -10,5 +10,6 @@ func ReadLines(path string) []string {
 	if err != nil {
 		panic(err)
 	}
-	return strings.Split(strings.TrimSpace(string(data)), "\n")
+	normalized := strings.ReplaceAll(string(data), "\r\n", "\n")
+	return strings.Split(strings.TrimSpace(normalized), "\n")
 }
