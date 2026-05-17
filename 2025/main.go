@@ -3,6 +3,7 @@ package main
 import (
 	"aoc2025/day01"
 	"aoc2025/day02"
+	"aoc2025/day03"
 	"os"
 )
 
@@ -13,6 +14,8 @@ func main() {
 		day01.Solve()
 	case "2":
 		day02.Solve()
+	case "3":
+		day03.Solve()
 	default:
 		println("Day not implemented")
 	}
